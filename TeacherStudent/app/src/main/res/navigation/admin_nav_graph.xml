@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_nav_graph"
+    app:startDestination="@id/choose_fragment_task">
+
+    <fragment
+        android:id="@+id/choose_fragment_task"
+        android:name="com.cbitss.teacherstudent.Fragments.Choose_fragment_task"
+        android:label="fragment_choose_task"
+        tools:layout="@layout/fragment_choose_task" >
+        <action
+            android:id="@+id/action_choose_fragment_task_to_studentListPage"
+            app:destination="@id/studentListPage" />
+        <action
+            android:id="@+id/action_choose_fragment_task_to_add_Trainer"
+            app:destination="@id/add_Trainer" />
+        <action
+            android:id="@+id/action_choose_fragment_task_to_add_Student"
+            app:destination="@id/add_Student" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentListPage"
+        android:name="com.cbitss.teacherstudent.Fragments.StudentListPage"
+        android:label="fragment_student_list_page"
+        tools:layout="@layout/fragment_student_list_page" >
+        <action
+            android:id="@+id/action_studentListPage_to_trainer_list"
+            app:destination="@id/trainer_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_Student"
+        android:name="com.cbitss.teacherstudent.Fragments.Add_Student"
+        android:label="fragment_add__student"
+        tools:layout="@layout/fragment_add__student" />
+    <fragment
+        android:id="@+id/add_Trainer"
+        android:name="com.cbitss.teacherstudent.Fragments.Add_Trainer"
+        android:label="fragment_add__trainer"
+        tools:layout="@layout/fragment_add__trainer" />
+    <fragment
+        android:id="@+id/trainer_list"
+        android:name="com.cbitss.teacherstudent.Fragments.Trainer_list"
+        android:label="fragment_trainer_list"
+        tools:layout="@layout/fragment_trainer_list" >
+        <action
+            android:id="@+id/action_trainer_list_to_trainer_profile"
+            app:destination="@id/trainer_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/trainer_profile"
+        android:name="com.cbitss.teacherstudent.Fragments.Trainer_profile"
+        android:label="fragment_trainer_profile"
+        tools:layout="@layout/fragment_trainer_profile" />
+</navigation>

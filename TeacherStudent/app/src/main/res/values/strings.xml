@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">TeacherStudent</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name ="i_am_teacher">I am Teacher</string>
+    <string name="i_am_admin">I am Admin</string>
+    <string name="i_am_student">I am Student</string>
+    <string name="admin_login">Admin LogIn</string>
+    <string name="student_login">Student LogIn</string>
+    <string name="teacher_login">Teacher LogIn</string>
+    <string name="login_text">LogIn Section</string>
+    <string name="email_hint">Enter Email</string>
+    <string name="passwordd_hint">Enter Password</string>
+    <string name="am_not">I am Not</string>
+    <string name="add_studnet_text">Add Student</string>
+    <string name="add_teacher_student">Add Teacher</string>
+    <string name="assign_class_text">Assign Class</string>
+    <string name="welcome_Admin">Welcome Admin</string>
+    <string name="submit_text">Submit</string>
+    <string name="name_hint">Enter Name</string>
+    <string name="course_hint">Enter Course Name</string>
+    <string name="date_of_joing">Joining Date</string>
+    <string name="expertise">Enter Trainer Skills</string>
 </resources>

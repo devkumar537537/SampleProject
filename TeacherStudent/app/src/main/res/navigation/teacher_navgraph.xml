@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teacher_navgraph"
+    app:startDestination="@id/teacher_Home_Fragment">
+
+    <fragment
+        android:id="@+id/teacher_Home_Fragment"
+        android:name="com.cbitss.teacherstudent.Fragments.Teacher_Home_Fragment"
+        android:label="fragment_teacher__home_"
+        tools:layout="@layout/fragment_teacher__home_" >
+        <action
+            android:id="@+id/action_teacher_Home_Fragment_to_teacher_class_Detail"
+            app:destination="@id/teacher_class_Detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacher_class_Detail"
+        android:name="com.cbitss.teacherstudent.Fragments.Teacher_class_Detail"
+        android:label="fragment_teacher_class__detail"
+        tools:layout="@layout/fragment_teacher_class__detail" >
+        <action
+            android:id="@+id/action_teacher_class_Detail_to_student_profile"
+            app:destination="@id/student_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/student_profile"
+        android:name="com.cbitss.teacherstudent.Fragments.Student_profile"
+        android:label="fragment_student_profile"
+        tools:layout="@layout/fragment_student_profile" >
+        <action
+            android:id="@+id/action_student_profile_to_message_Fragment2"
+            app:destination="@id/message_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/message_Fragment2"
+        android:name="com.cbitss.teacherstudent.Fragments.Message_Fragment"
+        android:label="fragment_message_"
+        tools:layout="@layout/fragment_message_" />
+</navigation>

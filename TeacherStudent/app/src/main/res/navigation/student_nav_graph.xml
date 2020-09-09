@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_nav_graph"
+    app:startDestination="@id/student_Home_fragment">
+
+    <fragment
+        android:id="@+id/student_Home_fragment"
+        android:name="com.cbitss.teacherstudent.Fragments.Student_Home_fragment"
+        android:label="fragment_student__home_fragment"
+        tools:layout="@layout/fragment_student__home_fragment" >
+        <action
+            android:id="@+id/action_student_Home_fragment_to_student_class_Detail"
+            app:destination="@id/student_class_Detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/student_class_Detail"
+        android:name="com.cbitss.teacherstudent.Fragments.Student_class_Detail"
+        android:label="fragment_student_class__detail"
+        tools:layout="@layout/fragment_student_class__detail" >
+        <action
+            android:id="@+id/action_student_class_Detail_to_message_Fragment"
+            app:destination="@id/message_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/message_Fragment"
+        android:name="com.cbitss.teacherstudent.Fragments.Message_Fragment"
+        android:label="fragment_message_"
+        tools:layout="@layout/fragment_message_" />
+</navigation>

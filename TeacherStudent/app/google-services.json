@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "100956070899",
+    "firebase_url": "https://classsecdule.firebaseio.com",
+    "project_id": "classsecdule",
+    "storage_bucket": "classsecdule.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100956070899:android:cf59a94af08450e0566886",
+        "android_client_info": {
+          "package_name": "com.cbitss.teacherstudent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100956070899-eieff8239o33aj3ic31crrq5kll9anen.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cbitss.teacherstudent",
+            "certificate_hash": "531ffe5834d150f419c3437738c714983e2e5b71"
+          }
+        },
+        {
+          "client_id": "100956070899-smfksdm9cim48kgaijor67bfgl5dpfrr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhb9VuaUTarkpK3fAvFu850d9GCmbd_p8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100956070899-smfksdm9cim48kgaijor67bfgl5dpfrr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

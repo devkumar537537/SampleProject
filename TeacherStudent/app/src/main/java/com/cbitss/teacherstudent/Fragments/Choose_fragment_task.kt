@@ -23,11 +23,9 @@ class Choose_fragment_task : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        add_student_move_btn.setOnClickListener {
-            view.findNavController().navigate(R.id.action_choose_fragment_task_to_add_Student)
-        }
-        add_teacher_move_btn.setOnClickListener {
-            view.findNavController().navigate(R.id.action_choose_fragment_task_to_add_Trainer)
+
+        assign_class_move_btn.setOnClickListener {
+            view.findNavController().navigate(R.id.action_choose_fragment_task_to_studentListPage)
         }
     }
 

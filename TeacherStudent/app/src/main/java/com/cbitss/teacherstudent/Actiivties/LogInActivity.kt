@@ -46,12 +46,38 @@ class LogInActivity : AppCompatActivity() {
 
 
         }
+        register__btn.setOnClickListener {
+            register__btn.visibility = View.GONE
+            registe_as_student_btn.visibility = View.VISIBLE
+            register_as_teacher_btn.visibility = View.VISIBLE
+        }
+
+        registe_as_student_btn.setOnClickListener {
+
+            register__btn.visibility = View.VISIBLE
+            register_as_teacher_btn.visibility = View.GONE
+            registe_as_student_btn.visibility = View.GONE
+            val intent = Intent(applicationContext,RegisterAcitivity::class.java)
+            intent.putExtra("Usertype","Student")
+            startActivity(intent)
+        }
+        register_as_teacher_btn.setOnClickListener {
+            register__btn.visibility = View.VISIBLE
+            registe_as_student_btn.visibility = View.GONE
+            register_as_teacher_btn.visibility = View.GONE
+
+            val intent = Intent(applicationContext,RegisterAcitivity::class.java)
+            intent.putExtra("Usertype","Teacher")
+            startActivity(intent)
+        }
 teacher_login_btn.setOnClickListener {
     val intent = Intent(applicationContext,TeacherHome::class.java)
+    intent.putExtra("Usertype","Teacher")
     startActivity(intent)
 }
         student_login_btn.setOnClickListener {
             val intent = Intent(applicationContext,StudentHome::class.java)
+            intent.putExtra("Usertype","Student")
             startActivity(intent)
         }
         admin_login_btn.setOnClickListener {

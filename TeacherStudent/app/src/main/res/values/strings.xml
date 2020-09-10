@@ -2,7 +2,7 @@
     <string name="app_name">TeacherStudent</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name ="i_am_teacher">I am Teacher</string>
+    <string name="i_am_teacher">I am Teacher</string>
     <string name="i_am_admin">I am Admin</string>
     <string name="i_am_student">I am Student</string>
     <string name="admin_login">Admin LogIn</string>
@@ -21,4 +21,16 @@
     <string name="course_hint">Enter Course Name</string>
     <string name="date_of_joing">Joining Date</string>
     <string name="expertise">Enter Trainer Skills</string>
+    <string name="classes_text">Class Going On: </string>
+    <string name="check_go">Check Timing and Go</string>
+    <string name="teacher_name">Teacher Name</string>
+    <string name="teacher_skills">Teacher Skills</string>
+    <string name="timeing_text">Enter Timing</string>
+    <string name="register_as">Register As</string>
+    <string name="student_text">Student</string>
+    <string name="teacher_text">Teacher</string>
+    <string name="Call">Call</string>
+    <string name="msessage_text">Message</string>
+    <string name="email_text">Email</string>
+
 </resources>

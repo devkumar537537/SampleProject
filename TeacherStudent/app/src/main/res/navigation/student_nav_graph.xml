@@ -3,16 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/student_nav_graph"
-    app:startDestination="@id/student_Home_fragment">
-
+    app:startDestination="@id/student_profile4">
     <fragment
-        android:id="@+id/student_Home_fragment"
-        android:name="com.cbitss.teacherstudent.Fragments.Student_Home_fragment"
-        android:label="fragment_student__home_fragment"
-        tools:layout="@layout/fragment_student__home_fragment" >
+        android:id="@+id/student_profile4"
+        android:name="com.cbitss.teacherstudent.Fragments.Student_profile"
+        android:label="fragment_student_profile"
+        tools:layout="@layout/fragment_student_profile" >
         <action
-            android:id="@+id/action_student_Home_fragment_to_student_class_Detail"
+            android:id="@+id/action_student_profile4_to_student_class_Detail"
             app:destination="@id/student_class_Detail" />
+        <argument android:name="name"
+            app:argType="string"/>
     </fragment>
     <fragment
         android:id="@+id/student_class_Detail"

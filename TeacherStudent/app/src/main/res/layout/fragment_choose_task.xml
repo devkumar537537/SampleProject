@@ -32,34 +32,10 @@
 
 
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:id="@+id/add_student_move_btn"
-            android:background="@drawable/edittext_border"
-            android:backgroundTint="@color/button_tintcoler"
-            android:elevation="20dp"
-            android:padding="8dp"
-
-            android:text="@string/add_studnet_text"
-            android:textColor="#fff"
-            android:textSize="20sp" />
 
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:id="@+id/add_teacher_move_btn"
-            android:background="@drawable/edittext_border"
-            android:backgroundTint="@color/button_tintcoler"
-            android:elevation="20dp"
-            android:padding="8dp"
 
-            android:text="@string/add_teacher_student"
-            android:textColor="#fff"
-            android:textSize="20sp" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -13,32 +13,20 @@
         <action
             android:id="@+id/action_choose_fragment_task_to_studentListPage"
             app:destination="@id/studentListPage" />
-        <action
-            android:id="@+id/action_choose_fragment_task_to_add_Trainer"
-            app:destination="@id/add_Trainer" />
-        <action
-            android:id="@+id/action_choose_fragment_task_to_add_Student"
-            app:destination="@id/add_Student" />
+
     </fragment>
     <fragment
         android:id="@+id/studentListPage"
         android:name="com.cbitss.teacherstudent.Fragments.StudentListPage"
         android:label="fragment_student_list_page"
         tools:layout="@layout/fragment_student_list_page" >
+
         <action
-            android:id="@+id/action_studentListPage_to_trainer_list"
-            app:destination="@id/trainer_list" />
+            android:id="@+id/action_studentListPage_to_student_profile2"
+            app:destination="@id/student_profile2" />
     </fragment>
-    <fragment
-        android:id="@+id/add_Student"
-        android:name="com.cbitss.teacherstudent.Fragments.Add_Student"
-        android:label="fragment_add__student"
-        tools:layout="@layout/fragment_add__student" />
-    <fragment
-        android:id="@+id/add_Trainer"
-        android:name="com.cbitss.teacherstudent.Fragments.Add_Trainer"
-        android:label="fragment_add__trainer"
-        tools:layout="@layout/fragment_add__trainer" />
+
+
     <fragment
         android:id="@+id/trainer_list"
         android:name="com.cbitss.teacherstudent.Fragments.Trainer_list"
@@ -53,4 +41,13 @@
         android:name="com.cbitss.teacherstudent.Fragments.Trainer_profile"
         android:label="fragment_trainer_profile"
         tools:layout="@layout/fragment_trainer_profile" />
+    <fragment
+        android:id="@+id/student_profile2"
+        android:name="com.cbitss.teacherstudent.Fragments.Student_profile"
+        android:label="fragment_student_profile"
+        tools:layout="@layout/fragment_student_profile" >
+        <action
+            android:id="@+id/action_student_profile2_to_trainer_list"
+            app:destination="@id/trainer_list" />
+    </fragment>
 </navigation>

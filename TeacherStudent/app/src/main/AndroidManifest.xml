@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Actiivties.AdmintHome"></activity>
+        <activity android:name=".Actiivties.RegisterAcitivity"></activity>
+        <activity android:name=".Actiivties.AdmintHome" />
         <activity android:name=".Actiivties.TeacherHome" />
         <activity android:name=".Actiivties.StudentHome" />
         <activity android:name=".Actiivties.LogInActivity">

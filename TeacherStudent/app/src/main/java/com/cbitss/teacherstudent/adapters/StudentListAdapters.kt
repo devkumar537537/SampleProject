@@ -1,18 +1,21 @@
 package com.cbitss.teacherstudent.adapters
 
-import android.media.CamcorderProfile.get
+import android.app.Activity
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
-import androidx.navigation.findNavController
+
+
 import androidx.recyclerview.widget.RecyclerView
+import com.cbitss.teacherstudent.Fragments.StudentProfile
 import com.cbitss.teacherstudent.modleclasses.StudentdataClass
 import com.cbitss.teacherstudent.R
 import de.hdodenhof.circleimageview.CircleImageView
 
-class StudentList_Adapters(var studentlist: MutableList<StudentdataClass>,var view:View) : RecyclerView.Adapter<StudentList_Adapters.MyViewHolder>() {
+@Suppress("DEPRECATION")
+class StudentListAdapters(var studentlist: MutableList<StudentdataClass>, var view:View, var usertype:String, var actvity: Activity) : RecyclerView.Adapter<StudentListAdapters.MyViewHolder>() {
 
     inner class MyViewHolder(itemview: View): RecyclerView.ViewHolder(itemview)
     {
@@ -37,7 +40,15 @@ class StudentList_Adapters(var studentlist: MutableList<StudentdataClass>,var vi
         holder.studnet_data_of_joining.text = studentdata.date_fo_joining
         holder.studeent_profile.setImageResource(studentdata.profile_url)
         holder.itemView.setOnClickListener {
-            view.findNavController().navigate(R.id.action_studentListPage_to_student_profile2)
+        var fragment = StudentProfile()
+            var bundle = Bundle()
+            bundle.putString("usertype",usertype)
+            fragment.arguments = bundle
+            var fraagmentmanager =actvity.getFragmentManager()
+            var fragmenttraction = fraagmentmanager.beginTransaction()
+            fragmenttraction.replace(R.id.fragment_container,fragment)
+            fragmenttraction.commit()
+
         }
     }
 

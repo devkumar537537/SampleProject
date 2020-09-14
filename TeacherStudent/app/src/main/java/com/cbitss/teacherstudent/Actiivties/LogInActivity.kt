@@ -77,7 +77,7 @@ teacher_login_btn.setOnClickListener {
 }
         student_login_btn.setOnClickListener {
             val intent = Intent(applicationContext,StudentHome::class.java)
-            intent.putExtra("Usertype","Student")
+            intent.putExtra("userType","Student")
             startActivity(intent)
         }
         admin_login_btn.setOnClickListener {

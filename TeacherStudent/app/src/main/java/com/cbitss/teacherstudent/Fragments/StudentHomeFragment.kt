@@ -5,12 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.findNavController
 import com.cbitss.teacherstudent.R
-import kotlinx.android.synthetic.main.fragment_choose_task.*
 
 
-class Choose_fragment_task : Fragment() {
+class StudentHomeFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -18,16 +16,11 @@ class Choose_fragment_task : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_choose_task, container, false)
+        return inflater.inflate(R.layout.fragment_student__home_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        assign_class_move_btn.setOnClickListener {
-            view.findNavController().navigate(R.id.action_choose_fragment_task_to_studentListPage)
-        }
     }
-
-
 }

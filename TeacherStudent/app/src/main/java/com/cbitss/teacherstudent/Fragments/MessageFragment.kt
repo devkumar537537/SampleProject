@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.cbitss.teacherstudent.R
 
 
-class Student_Home_fragment : Fragment() {
+class MessageFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -16,11 +16,8 @@ class Student_Home_fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_student__home_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_message_, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
 
-    }
 }

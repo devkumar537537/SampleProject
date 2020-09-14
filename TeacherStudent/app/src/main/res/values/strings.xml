@@ -32,5 +32,7 @@
     <string name="Call">Call</string>
     <string name="msessage_text">Message</string>
     <string name="email_text">Email</string>
+    <string name="student_name">Student Name</string>
+    <string name="student_email">abc@gmail.com</string>
 
 </resources>

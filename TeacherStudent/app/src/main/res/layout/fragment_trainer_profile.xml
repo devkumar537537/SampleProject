@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/backgroundColor"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Fragments.Trainer_profile">
+    tools:context=".Fragments.TrainerProfile">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         android:weightSum="10">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
+
             android:id="@+id/profile_image"
             android:layout_width="0dp"
             android:layout_weight="4"
@@ -71,13 +71,12 @@
         />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/student_class_list_recyclerview"
+        android:id="@+id/teacher_class_list_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white_color"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,10 +84,11 @@
         app:layout_constraintVertical_bias="0.234" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/timing_teacher_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:visibility="gone"
         android:background="@color/white_color"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent">
@@ -110,6 +110,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/timeing_text"
+                android:id="@+id/timing_text"
                 android:textColor="@color/colorPrimary"
                 android:textColorHint="@color/backgroundColor"
                 android:textColorHighlight="@color/backgroundColor"
